@@ -130,14 +130,84 @@ import random
 # multip(number_one, number_two)
 
 #14.Найти третью цифру числа или сообщить, что её нет
-number = int(input('Введите число: '))
+# number = int(input('Введите число: '))
 
-def find_numb_3(numb):
-    if 1000 > numb > 100:
-        return print(numb % 10)
-    elif numb > 1000:
-        return print((numb % 100) // 10)  
-    else:
-        return print('not found')
+# def find_numb_3(numb):
+#     if 1000 > numb > 100:
+#         return print(numb % 10)
+#     elif numb > 1000:
+#         return print((numb % 100) // 10)  
+#     else:
+#         return print('not found')
 
-find_numb_3(number)
+# find_numb_3(number)
+
+#15.Дано число. Проверить кратно ли оно 7 и 23
+
+# number = int(input('Введите число: '))
+# number = random.randint(1,1000)
+# def multip_1(numb):
+#     return numb % 7 == 0 and numb % 23 == 0
+
+# print(number)
+# print(multip_1(number))
+
+#16. Дано число обозначающее день недели. Выяснить является номер дня недели выходным 
+
+# day_week = int(input('Введите число: '))
+
+# def weekend(numb):
+#     return numb == 6 or numb == 7
+
+# print(weekend(day_week))
+
+#17.По двум заданным числам проверять является ли одно квадратом другого
+
+# number_1 = int(input('Введите число: '))
+# number_2 = int(input('Введите число: '))
+
+# def sqr_number(numb_1, numb_2):
+#     return number_1 == number_2 ** 2 or number_2 == number_1 **2
+
+# print(sqr_number(number_1, number_2))
+
+#18.Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y
+
+# def bool(x,y):
+#     return not(x or y) == (not x and not y)
+
+# print(bool(0,1))
+# print(bool(1,1))
+# print(bool(1,0))
+# print(bool(0,0))
+
+#19.Определить номер четверти плоскости, в которой находится точка с координатами Х и У, причем X ≠ 0 и Y ≠ 0
+
+# def find_quarter(x,y):
+#     if x > 0 and y > 0:
+#         return 1
+#     elif x < 0 and y >0:
+#         return 2
+#     elif x < 0 and y < 0:
+#         return 3
+#     else:
+#         return 4
+
+# print(find_quarter(-2,5))
+
+# 20. Задать номер четверти, показать диапазоны для возможных координат
+
+# def quarter(q):
+#     if q == 1:
+#         print('x > 0, y > 0')
+#     elif q == 2:
+#         print('x < 0, y > 0')
+#     elif q == 3:
+#         print('x < 0, y < 0')
+#     elif q == 4:
+#         print('x > 0, y < 0')
+
+# quarter(2)
+
+#21.Программа проверяет пятизначное число на палиндромом.
+
