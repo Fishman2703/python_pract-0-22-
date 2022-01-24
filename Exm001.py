@@ -1,4 +1,4 @@
-from array import array
+from random import randint
 from cmath import sqrt
 import random 
 import math
@@ -276,7 +276,7 @@ from traceback import print_tb
 
 #27. Определить количество цифр в числе
 # numb = input('Введите число: ')
-
+# numb = str(123)
 # def find_count(val):
 #     print(len(val))
 
@@ -319,7 +319,168 @@ from traceback import print_tb
 
 #31.Задать массив из 8 элементов и вывести их на экран 
 
-arr = [i for i in range(8)]
-print(arr)
+# arr = [i for i in range(8)]
+# print(arr)
+
+#32.Задать массив из 8 элементов, заполненных нулями и единицами вывести их на экран
             
+# a = [] 
+# n = 8  
+# for i in range(n):  
+#     new_element = randint(0,1)
+#     a.append(new_element)  
+    
+# print(a)
+
+#33.Задать массив из 12 элементов, заполненных числами из [0,9]. Найти сумму положительных/отрицательных элементов массива
+
+# a = [] 
+# n = 12  
+# for i in range(n):  
+#     new_element = randint(-9,9)
+#     a.append(new_element)  
+# print(a)
+
+# sum1 = 0
+# sum2 = 0
+
+# for i in range(len(a)):
+#     if a[i] < 0:
+#         sum1 = sum1 + a[i]
+#     elif a[i] > 0:
+#         sum2 = sum2 + a[i]
+# print(sum1)
+# print(sum2)
+
+#34.Написать программу замену элементов массива на противоположные
+
+# a = [] 
+# n = 12  
+# for i in range(n):  
+#     new_element = randint(-9,9)
+#     a.append(new_element)  
+# print(a)
+
+# for i in range(len(a)):          
+#     a[i] = -a[i]
+
+# print(a)
+
+#35.Определить, присутствует ли в заданном массиве, некоторое число
+
+# a = [] 
+# n = 12  
+# for i in range(n):  
+#     new_element = randint(-9,9)
+#     a.append(new_element)  
+# print(a)
+
+# x = int(input('Введите число: '))
+
+# def find_x(array):
+#     for i in range(len(array)):
+#         if array[i] == x:
+#             print('+')
+#             break
+
+# find_x(a)
+
+#36. Задать массив, заполнить случайными положительными трёхзначными числами. Показать количество нечетных\четных чисел
+
+# a = [] 
+# n = 10  
+# for i in range(n):  
+#     new_element = randint(100,1000)
+#     a.append(new_element)  
+# print(a)
+
+
+# def even(array):
+#     b = 0
+#     c = 0
+#     for i in range(len(array)):
+#         if a[i] % 2 == 0:
+#             b = b + 1
+#         elif a[i] % 2 != 0:
+#             c = c + 1
+#     return print(f'нечет {c} четн {b}')
+
+# even(a)
+
+# a = [0]*10
+# def fill_array(array, min, max,lens):
+#     array = [0]*lens
+#     for i in range(len(array)):
+#         array[i] = randint(min,max)
+#     return array
+
+# a = None
+# print(fill_array(a,1,10,10))
+
+#37.В одномерном массиве из 123 чисел найти количество элементов из отрезка [10,99]
+
+###### Для индексов #######
+# def fill_array(min, max,lens):
+#     array = [0]*lens
+#     for i in range(len(array)):
+#         array[i] = randint(min,max)
+#     return array
+
+# a = fill_array(10,1000,123)  
+# print(a) 
+
+# def print_count(array):
+#     count = 0
+#     for i in array:
+#         if i >= 10 and i <= 99:
+#             count = count + 1
+#     return count
+
+# print(print_count(a))
+
+####### Для значений эл-тов ########
+# def fill_array(min, max,lens):
+#     array = [0]*lens
+#     for i in range(len(array)):
+#         array[i] = randint(min,max)
+#     return array
+
+# a = fill_array(1,12,10)  
+# print(a) 
+
+# def print_count(array):
+#     count = 0
+#     for i in range(len(array)):
+#         if 3 <= array[i] <= 6:
+#             count = count + 1
+#     return count
+
+# print(print_count(a))
+
+# 38. Найти сумму чисел одномерного массива стоящих на нечетной позиции
+
+# a = fill_array(1,10,13)
+# print(a)
+# def summ_el(array):
+#     summ1 = 0
+#     for i in range(len(array)):
+#         if i % 2 != 0:
+#             summ1 = summ1 + array[i]
+#     return summ1
+
+# print(summ_el(a))
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
 
