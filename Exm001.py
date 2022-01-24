@@ -1,4 +1,9 @@
+from array import array
+from cmath import sqrt
 import random 
+import math
+from tkinter import N
+from traceback import print_tb
 
 # 0 Вывести квадрат числа
 
@@ -210,4 +215,111 @@ import random
 # quarter(2)
 
 #21.Программа проверяет пятизначное число на палиндромом.
+
+# def check_palindrom(numb):
+#     return (numb // 10000) % 10 == numb % 10 and (numb // 1000) % 10 == (numb // 10) % 10
+
+# value = int(input('Введите число: '))
+# print(check_palindrom(value))
+
+#22.Найти расстояние между точками в пространстве 2D/3D
+
+# sqrt(xb-xa)^2 + (yb - ya)^2
+# def find_dist_2D(x1, y1, x2, y2):
+#     return sqrt((x2 - x1)**2 + (y2 - y1)**2)
+
+# def find_dist_3D(x1, y1, z1, x2, y2, z2):
+#     return sqrt((x2 - x1)**2 + (y2 - y1)**2 + (z2 - z1)**2)
+
+# print(find_dist_3D(2,-2,4,8,7,10))
+# print(find_dist_2D(2,8,-2,7))
+
+#23.Показать таблицу квадратов чисел от 1 до N
+ 
+# def pow2(number):
+#     value = range(1, number+1)
+#     for i in value:
+#          print(f'{i}^2 = {int(i**2)}')
+
+# pow2(28)
+
+#24.Найти кубы чисел от 1 до N
+
+# def pow3(number):
+#     value = range(1,number+1)
+#     for i in value:
+#         print(f'{i}^3 = {int(i**3)} ')
+
+# pow3(8)
+
+#25.Найти сумму чисел от 1 до А
+
+# def summ(A):
+#     sum1 = 0
+#     value = range(1, A+1)
+#     for i in value:
+#         sum1 = sum1 + i
+#     print(sum1)
+
+# summ(1997)
+
+#26.Возведите число А в натуральную степень B используя цикл
+
+# def a_pow(a,b):
+#     res = 1
+#     while(b>0):
+#         res = res * a
+#         b = b - 1
+#     print(res)
+
+# a_pow(2,8)
+
+#27. Определить количество цифр в числе
+# numb = input('Введите число: ')
+
+# def find_count(val):
+#     print(len(val))
+
+# find_count(numb)
+
+#28.Подсчитать сумму цифр в числе
+
+# def digital_sum(n):
+#     if n < 10:
+#         return n
+#     return n % 10 + digital_sum( n // 10)
+
+# number = int(input('Введите число: '))
+
+# print(digital_sum(number))
+
+#29. Написать программу вычисления произведения чисел от 1 до N
+
+# def composition(N):
+#     sum1 = 1
+#     value = range(1, N+1)
+#     for i in value:
+#         sum1 = sum1 * i
+#         print(sum1)
+
+# number = int(input('Введите число: '))
+# composition(number)
+
+#30.Показать кубы чисел, заканчивающихся на четную цифру
+
+# def cube(num1, num2):
+#     a = 0
+#     for num1 in range(num2):
+#         if num1 % 2 == 0:
+#             a = num1**3
+#             print(a)
+#     return a
+    
+# cube(1,10)
+
+#31.Задать массив из 8 элементов и вывести их на экран 
+
+arr = [i for i in range(8)]
+print(arr)
+            
 
