@@ -1,9 +1,11 @@
+from platform import java_ver
 from random import randint
 from cmath import sqrt
 import random 
 import math
 from tkinter import N
 from traceback import print_tb
+from unittest import result
 
 # 0 Вывести квадрат числа
 
@@ -469,6 +471,79 @@ from traceback import print_tb
 #     return summ1
 
 # print(summ_el(a))
+
+#39. Найти произведение пар чисел в одномерном массиве. 
+# Парой считаем первый и последний элемент, второй и предпоследний и т.д.
+
+# def fill_array(min, max,lens):
+#     array = [0]*lens
+#     for i in range(len(array)):
+#         array[i] = randint(min,max)
+#     return array
+
+# a = fill_array(1,10,6)  
+# print(a)
+
+# def el_composition(array):
+#     res = []
+#     x = -1
+#     for i in range(len(array)):
+#         res.append(array[i] * array[x])
+#         x -= 1
+#         if array[i] == array[x]:
+#             break  
+#     return res
+
+# print(el_composition(a))
+
+#В Указанном массиве вещественных чисел найдите разницу между максимальным и минимальным элементом
+
+# def fill_array(min, max,lens):
+#     array = [0]*lens
+#     for i in range(len(array)):
+#         array[i] = randint(min,max)
+#     return array
+
+# a = fill_array(1,100,10)  
+# print(a)
+
+# def min_max(array):
+#     max = 0
+#     min = array[1]
+#     diff = 0
+#     for i in range(len(array)):
+#         if array[i] > max:
+#             max = array[i]
+#         elif array[i] < min:
+#             min = array[i]
+#         diff = max - min
+#     return f'max = {max} min = {min} diff = {diff}'
+
+# print(min_max(a))
+
+#41.Выяснить являются ли три числа сторонами треугольника 
+
+# def trian(a,b,c):
+#     return a < b +c and b < a + c and c < a + b
+
+# print(trian(6,2,5))
+
+#42.Определить сколько чисел больше 0 введено с клавиатуры
+
+def find_numbers(value):
+    count = 0
+    for i in range(len(value)):
+        if value[i] != 0:
+            count += 1
+    return count
+
+number = input('Число: ')
+print(find_numbers(number))
+
+
+
+        
+
 
 
 
